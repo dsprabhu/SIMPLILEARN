@@ -1,0 +1,1 @@
+Invoke-AzVMRunCommand -ResourceGroupName 'ODL-AZ-1111871' -VMName 'prabhu-vm' -CommandId 'RunPowerShellScript' -ScriptString 'Install-WindowsFeature -Name Web-Server -IncludeManagementTools'

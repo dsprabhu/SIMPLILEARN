@@ -1,0 +1,11 @@
+1. docker images
+2. docker ps -a
+3. docker pull ubuntu
+4. docker run -it --name pizza ubuntu
+5. mkdir Foldername
+6. docker ps -a 
+7. docker commit pizza rayundu/az-204:ver1
+8. docker login
+9. docker push rayundu/az-204:version1
+10. doker pull tutum/hello-world
+11. docker run -it -p 80:80 --name chips tutum/hello-world

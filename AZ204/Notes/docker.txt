@@ -1,0 +1,7 @@
+docker images
+docker ps -a
+docker pull ubuntu
+docker run -it --name pizza ubuntu
+docker commit pizza gaurav2/az204:ver1
+docker login
+docker push gaurav2/az204:ver1
