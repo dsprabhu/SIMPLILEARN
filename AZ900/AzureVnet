@@ -1,1 +1,25 @@
 ### Azure virtual machine network
+virtual network -> create virtual network
+name: vnet_prod
+address space: 192.16.1.0/24
+subscription: pay-as-you-go
+Resource group:
+Location: (US) Central US
+Subnet: 
+	name: subnet1
+	address range: 192.168.1.2
+	DDoS protection: basic or standard
+	service endpoints: Disabled or enabled
+	firewall: Disabled or enabled
+
+
+select vnet_pord subnets -> you can view subnet1
+
++subnet (create another subnet)
+
+name: subnet2
+address range (CIDR block): 192.168.2.0/24
+Network security group:
+route tabel:
+service endpoints:
+subnet delegaton:
