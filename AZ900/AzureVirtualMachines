@@ -1,1 +1,23 @@
-### 
+### Azure Virtual Machines
+other alternates vm scale sets, app services, azure functions.
+
+create virtual machine:
+    subscription:
+    Inbound port rules:
+    select inbound port: RDP
+    preminum SSD:   mission creediatl work load productrion
+    standard SSD:
+    standard HDD:
+    virtual network:
+    subnet:
+    network security group: basic
+    publich inbound port: Allow selected ports
+    Select inbound ports: RDP
+    Accelerated networking : off ### increase the enternet 
+    monitoring:
+    Diagnostic storage account:   ### store boot diaglose
+    backup:
+    recovery services vault:
+    extentions: applications (av)
+    cloud init: 
+    vm generation: gen2 (uef base boot)
