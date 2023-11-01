@@ -1,0 +1,23 @@
+### Azure Vitrual Private Network Gateway
+
+Gateway -> connect two network with help of virtual device
+
+Azure Vnet   <->  VPN  <-> Azure Vnet
+(OnPremise DC)
+VPN gateway send encrpited data 
+
+### Azure Application Gateway
+
+Load balance does not provide any kind of security so application gateway is used.
+
+contoso.com ---> application gateway (WAF,L7 LB) ---> image server pool (/images/*)
+Load balancer are operating at layer 4 of OSI but Azure application gateway is operating at layer 7.
+it supports autoscaling, zone redunency,static ip, web application firewall
+
+Features:
+    Acts as Web Application firewall(WAF)
+    Can be secured with certificates (HTTP over SSL)
+    Can route with URL
+    can redirect Web traffic
+    Can be autoscaled
+    can be zone redundant
