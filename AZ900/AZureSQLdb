@@ -1,0 +1,49 @@
+### SQL Database
+
+subscription: Pay-As-You-Go
+	Resource group: (new) HumanResources
+
+Database name: Employeeinformation
+Server: create new
+	Server name: enterpriseinfo
+	server admin login: rootadmin
+	password:
+	confirm password:
+	Location:
+	allow azure services to access server:
+Want to use SQL elastic pool: No  (yes, unexpected load hence latency)
+Compute+storage: Basic
+		2GB storage
+Additional settings
+Data source
+	use existing data: sample
+
+database collation
+	collation: SQL_Latin_General_CP1_CI_AS
+Advanced data security
+	Enable advaced data secirity: Not now
+
+tags
+Name:sqldabase
+owner:rob@company.com
+dbadmin:steve@compay
+
+review and create
+
+
+Once created, got Empolyeeinfomation overview
+
+under setting, configure to change subnet settings.
+
+under setting,
+Geo-Replication
+Conneciton strings
+sync to other databases
+settings->configure ->set server firewall
+firewall settings -> add client IP
+query editor ->
+username:rootadmin	
+password:
+
+select * from db.buildversion -> run
+
