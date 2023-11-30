@@ -1,0 +1,218 @@
+### CHEF
+1) In which year was Chef founded?
+Chef was founded in the year 2008.
+2) Which tool transfers infrastructure into code?
+Chef Infra transfers infrastructure into code.
+3) Which is the most favourable programming language used for Chef?
+Ruby is the most favourable programming language for Chef tool
+4) What is the runlist in Chef?
+It is the outline of roles and recipes in a specific order in which they have to run.
+5) Which command is used to upload the cookbook to the Chef Server?
+knife cookbook upload command is used to upload cookbook to the Chef Server.
+6) Which of the following suits the syntax of Chef apply?
+chef-apply name_of_recipe.rb is the suitable syntax for chef apply.
+7) Which tool acts as a hub for data configuration?
+Chef Server acts as a hub for configuration of data
+8) Which resource is used to manage APT repository updates on Debian and Ubuntu?
+Use the apt_update resource to manage APT repository updates on Debian and Ubuntu platforms.
+9) Why are SSL certificates used in Chef?
+You need the SSL certificate for the initial configuration of Chef and for creating the certificate and private keys in Nginx
+10) Which of the following is used to interact with access control lists on Chef Server?
+chef_acl_resource is used to interact with access control lists that exists on Chef Server.
+11) What is ChefDK?
+It is a software development kit which is used to develop and test Chef cookbooks
+12) Which of the following is used to create and manage a virtual version of computing environments for tests and software development?
+Vagrant is used to create and manage a virtual version of computing environments for tests and software development.
+13) Where do you store cookbooks in Chef?
+The cookbooks are stored in the bookshelf directory of Chef which can be easily modified as per your needs.
+14) Which of the following is used to manage users in Chef?
+chef_user resource is used to manage the users in the Chef
+15) Which of the following is located at the top of the cookbook directory structure?
+A file named metadata.rb is located at the top of every cookbook directory structure.
+16) Which of the following is used to create one or more instances in Chef?
+kitchen create subcommand is used to create one or more instances in the Chef.
+17) How many types of handlers are there in Chef?
+There are three types of handlers in Chef and they are exception handler, report handler, and start handler.
+### Puppet
+18) What is the location of the global configuration layer in the configuration file?
+The global configuration layer in the configuratio file is located in $confdir/hiera.yaml.
+19) What element of the Facter determines the name of the fact?
+Facter.add('fact_name) determines the name of the fact.
+20) What element of the Facter determines the fact's value?
+Setcode statement determines the fact's value.
+21) type of facts in Facter?
+External facts, custom facts, Built-in facts.
+22) Which of the following resource body components is used by Puppet to identify the resource?
+Title is used to identify the resource.
+23) Which of the following can be used to specify a sequence for resource implementaton?
+Relation metaparameters, Chaining arrows, The require function
+24) Which if the following keywords is used when a class inherits another class?
+Inherits keyword is used when one class inherits another class
+25) Which of the following are function of Puppet agent?
+Pulling catalogs from Puppet master , Applying configuraton updates to the nodes, Polling the Puppet master after a certain interval.
+26) Puppet programming language is a ________
+Puppet programming language is a domain specific language
+27) Which of the following Puppet datatypes store data in key value format?
+Hashes datatype in Puppet stores values in key value format.
+28) Which of the following built-in variable describes Puppet master’s Fully-Qualified Domain Name (FQDN)?
+$servername variable describes Puppet master’s Fully-Qualified Domain Name (FQDN).
+29) Which of the following conditional statements choose and execute one of the serveral code blocks?
+Case statements choose and execute one of the serveral code blocks.
+30) Which of the following built-in functions retrieves a given key value?
+lookup() function is used to retrieve a given key value.
+31) What is the location of external facts in the module directory?
+<MODULEPATH>/<MODULE>facts.d/ is the location of external facts in the module directory
+32) What purpose does the blocklist setting in Facter config file serve?
+Blocklist setting prevents all facts within the listed groups from being resolved when Facter runs.
+33) Puppet allows users to upload their custom modules in Puppet Forge. True or False?
+Puppet allows users to upload their custom modules in Puppet Forge
+32) What is the value of the variable $title in a class?
+By default, the value of the $title variable is set to the name of the class.
+33) What is the default order in which Puppet resources are applied?
+Resources are applied in the order that they are declared in the manifests.
+### Ansible
+34) When did Red Hat acquire Ansible?
+Red Hat acquired Ansible on Oct-15.
+35) Which company was established to manage and support Ansible?
+Ansible INC handled all the releases of Ansblle till Red Hat purchased Ansible in 2015
+36) Who is the author of Ansible?
+Michael DeHaan coined Ansible and did its first release in 2012
+37) How many servers does Ansible have for a software architecture?
+Minimum two servers are there in Ansible
+38) Ansible is developed in Powershell and ________.
+Ansible is developed majorly in Python which makes it easier to interact with machine
+39) In which year was Ansible's first release?
+Ansible initial release was on 20th Feb 2012.
+40) What is the Ansible's playbook execution order?
+Playbook executes plays which contains list of tasks and each task is alist of modules that run on node machines.
+41) In which format are Ansible playbooks expressed?
+Ansible understands Yaml suntax and thus, all the supporting files are written in Yaml
+42) Which of the following statements is correct?
+Playbook executes plays which contains list of tasks and each task is alist of modules that run on node machines.
+43) Can we create new Ansible modules?
+You can create custom modules in Ansible.
+### Terraform
+44) Which files are processed by Terraform?
+Terraform is designed to work with only JSON and TF files
+45) Resource names in Terraform are provider specific.
+Resource name acts as a key for Terraform
+46) The building blocks of Terraform are ________
+Resources are a basic compoenents with the help of which Terraform understands and builds the plan of execution.
+47) Which of the following is not indicative of anything in the output of Terraform plan?
+" = " . It just shows what remains unchanged. 
+48) Which file keeps the current state of the infrastructure?
+Terraform saves current state of the operations in terrafotm.tfstate file
+
+## Chef
+49) Which tool collects system configuration data provided to the chef-client for use within cookbooks?
+Ohai is a tool that is used to collect system configuration data, which is provided to the chef-client for use within cookbooks.
+50) Where can you get reusable cookbooks that are written and maintained by the Chef community?
+Reusable cookbooks maintained by the Chef community are present in Chef Supermarket
+51) Which of the following is the login command for kitchen?
+$kitchen login PLATFORM (options) is used for login into the single instance.
+52) What would you set your cookbook’s version to once it is ready to use in production?
+You should set your cookbook’s version number to 1.0.0 once it is ready to use in production
+53) Which of the following lets you modify the cookbooks and other configiration data?
+Chef Workstation is the host that lets you modify the cookbooks and other configuration data.
+54) What is the role of starter kit in Chef?
+Starter kit will create the necessary configuration files like chef directory, knife.rb, the ORGANIZATION-validator.pem, and USER.pem files etc. with the correct information that is required to interact with the Chef server.
+55) Which of the following is used to identify the situation that results the decline of Chef run?
+With the help of an exception handler, one can identify the situation that results in decline the of Chef run.
+56) Which of the following are the components of cookbook?
+Attributes, metadata, and tests are the components of cookbook.
+57) Which of the following helps to run cookbook on the Chef Server?
+Test kitchen is used to run cookbook on the Chef Server.
+58) Which of the following command is used to print the kitchen version?
+$kitchen version command prints the version of the kitchen
+59) What are data bags in Chef?
+Data bags are global variables stored in the form of JSON data and are accessible from the Chef Server.
+60) Which of the following is compiled when the cookbook is uploaded to Chef Server?
+Metadata file is complied when the cookbook is uploaded to Chef Server using the knife command.
+61) Which of the following is the syntax for attributes in recipe?
+attribute?('name_of_attribute') is the correct syntax for attributes in recipe.
+62) Which of the following technique is used to encrypt a data bag item?
+A data bag item is encrypted using shared secret encryption that allows each data bag item to store confidential information.
+63) Which of the following ways are used to edit a data bag item?
+A data bag item can be edited in two ways, using Chef knife or by Chef management console.
+### Puppet
+64) Which programming language is used to write Puppet manifests?
+Puppet has its own programming language, specifically designed to write Puppet manifests.
+65) What are facts in Puppet?
+Puppet facts are system information.
+66) What are Puppet classes made up of?
+Puppet classes are a collection of Puppet resources.
+67) Where are Puppet classes stored?
+Puppet modules store all Puppet classes, manifests, and more Puppet components.
+68) Which of the following types of architecture can be used by Puppet?
+Puppet supports both standalone as well as master-agent architecture.
+69) Where is the catalog compiled in a standalone Puppet architecture?
+Catalogs are compiled at each node individually in standalone architecture.
+70) What programming paradigm does the Puppet programming language follow?
+Puppet programming language follows the declarative programming paradigm.
+71) What is Hiera in Puppet?
+Puppet Hiera is a Puppet in-built data store.
+72) Which of the following could be a name for a manifest file?
+Puppet manifests are saved with .pp extension.
+73) What is the file extension used in Hiera config file?
+Puppet Hiera configuration file has .yaml extension.
+74) What is Puppet Forge?
+Puppet Forge is the online Puppet module library.
+75) Which if the following operating systems does not support Puppet?
+Puppet is a cross platform tool.
+76) What is $operatingsystem?
+$operatingsystem is a system variable set by Facter.
+77) Environment varibales can be accessed by Facter. True or false?
+TRUE
+78) Which of the followling entities make up the catalog in Puppet?
+The data provided by Puppet agent , External data details, Details related to Puppet manifests
+79) What is Puppet Facter?
+Puppet Facter is the official Puppet system profiling library.
+80) What is the node where Puppet agent daemon runs called?
+Puppet agent daemon runs on the node called Puppet agent.
+81) What are Puppet resources?
+Puppet resources are the fundamental units of system configuration.
+### Ansible
+82) Which of the following statements is correct?
+Ad-Hoc commands are single line command used to run operation on node machine wothout running playbooks
+83) Which hosts would this playbook run on? - hosts: web tasks: - name: copy test.txt file src: test.txt dest: /tmp/test.txt inventory file: [web] web1 10.0.0.1 web2 10.0.0.2
+ANS: hosts has only one value as web
+84) Can we have mutiple plays in a playbook?
+Playbook can have more than one plays.
+85) Which is a continuous monitoring tool?
+Puppet , Saltstack, chef
+86) Where is the Ansible client installed?
+Ansible only treats the node machine as a client but there is no client version on Ansible required to be installed in the node machines.
+87) What is Ansible?
+Ansible is used for infrastruture automation
+88) Ansible is used for ....
+AWS provisioning
+Deploying application
+Automating nodes
+89) What is the benefit of testing playbook and roles?
+It helps to fill the gaps in the scripts and reults in faster result which saves time
+### Terraform
+90) True or False: Terraform allows variable interpolation.
+The interpolation syntax is powerful and allows you to reference variables, attributes of resources, call functions.
+91) When you are defining a resource in main.tf, how is THAT resource and its properties addressed down the line?
+Name in quotes after the word that has the resource name like "aws_instance"
+It is pre-defined by terraform
+92) The name of the resource type that creates an ec2 instance is ______.
+aws_instance
+It is pre-defined by terraform
+93) _______ files are processed last.
+Override files have the least prescedence.
+94) Which command will show you the dependencies in building the cloud platform by your code?
+terraform plan command is designed to provide a detailed study of the operation
+95) File format of Terraform code files:
+HCL acts as a superset for JSON and all JSON representations are valid for HCL.
+96) What is needed to connect to your AWS infrastructure using Terraform code (in terms of credentials)?
+Access Key is the major values for almost all the SSH connections and instance creation
+97) Terraform is a ___________ language.
+Declarative
+In Terraform, user defines and designes the environment and if there is a change in it, Terraform applies it in the next terraform apply.
+98) How to find the sequence in which Terraform will create/modify/delete a resource when the plan is executed?
+terraform plan
+terraform plan give you the entire operations and changes along with sequence that terraform will do once the script is applied.
+
+
+
