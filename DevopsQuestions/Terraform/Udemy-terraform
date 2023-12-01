@@ -1,0 +1,110 @@
+### HashiCorp Certified: Terraform Associate Practice Questions
+
+1) Terraform loads/executes which files?
+.tf and .tf.json 
+2) Terraform apply is in progress. It was supposed to make 20 changes. It finished 10. it ran into a run time error and apply phase stopped. What would happen?
+The 10 changes will remain, but last 10 will not be executed
+3) ___________ is an embedded policy-as-code framework integrated with the HashiCorp Enterprise products. It enables fine-grained, logic-based policy decisions.
+sentinel
+4) Can you delete the default workspace?
+No
+5) Which feature is NOT free in terraform cloud?
+Roles and Team management
+6) Will terraform init print out values you have defined in the output block?
+No 
+7) Which terraform command will Manually mark a resource for recreation.
+terraform taint
+8) With terraform init command , if you want to key/value directly on the command line, what does that look like?
+-backend-config="KEY=VALUE"
+9) Multiple attributes at the same nesting level consecutive line like:
+name = "foo"
+type = "bar"
+How should you format?
+equal signs should line up
+10) Using some providers require downloading of data:
+True
+11) terraform apply asks for confirmation before executing?
+True
+12) Environment variable to store aws secret key
+AWS_SECRET_ACCESS_KEY
+13) If we already have a resource belong to a particular provider in our state file, terraform will fail because it cannot figure out which provider this resource comes from. T/F
+False
+14) terraform state list shows you resource1, resource2, and resource3. You like to see the details (attributes) of resource2. Which command?
+terraform state show resource2
+15) Variable that enables debug/verbose level logging:
+TF_LOG
+16) Which of the following is not indicative of anything in the output of terraform plan?
+=to show what will remain unchanged
+17) Terraform can figure out the correct order to destroy from state:
+True
+18) Terraform is a ________ tool
+Orchestration
+19) How to ensure the user is using terraform version later than 0.11?
+terraform{
+required_version=">0.11.0"
+}
+20) Keyword for providers in .tf files?
+provider
+21) Installing terraform w/o internet is called?
+air-gapped
+22) Command to create a new workspace named foo
+terraform workspace new foo
+23) PTFE is same as:
+Terraform Enterprise
+24) State file is always encrypted at rest. T/F:
+False
+25) In which phase, do you get to see what changes will happen when you run apply.
+plan
+26) Terraform does not recognize providers (error: provider.aws no suitable version installed), when you run "terraform plan". This used not happen? What could be wrong?
+You did not run "terraform init" after upgrading Terraform
+27) The attributes of a resource for a module can be accessed by another module directly
+No
+28) To publish to Terraform's public registry:
+code has to be on Github and public
+29) List definition format
+foo = []
+30) Which stage downloads providers supported by Hashicorp?
+init
+31) Does Terraform need drivers and Registry entries?
+neither
+32) Which is NOT a part of provider.tf file? (for aws)
+availability zone
+33) You have used count to create 5 aws_instance's and called it foo. How do you refer to the all the private_ips of these instances?
+aws_instance.foo[*].private_ip
+34) _______ backend stores state ON the local filesystem , locks the state using system APIs, and performs operations locally
+local
+35) How do you figure out which providers you are using?
+terraform providers command
+36) If you want clustered deployment for PTFE, you backend database has to be?
+PostgreSQL
+37) Local-exec provisioner is useful for running commands on the CLI of ___________, not on the __________
+the machine running terraform, resource
+38) Can you install Terraform on Freebsd?
+yes
+39) Which of the following is NOT supported as backend:
+consul,s3,heroku(answer) ,artifactory
+40) _________ command creates a visual graph of Terraform resources
+terraform graph
+41) Command to blow away the infrastructure previously built by terraform code.
+terraform destroy
+42) How to destroy just once resource?
+terraform destroy-target aws_instance.foo
+43) Most verbose log level is:
+TRACE
+44) Any set of terraform config files in a folder can be a _____________
+module
+45) Building blocks of Terraform:
+resources
+46) Which terraform command updates local state file against real resources
+terraform refresh
+47) True of False: Terraform allows variable interpolation:
+True
+48) A _______ can be thought of as 1 smallest unit of your infrastructure.
+resource
+49) Terraform 0.12 supports clear cut for loops
+Yes
+50) How does a body of code know where to find the module it is supposed to use?
+source argument
+51) Splat expressions use which character?
+*
+example: var.list[*].id
